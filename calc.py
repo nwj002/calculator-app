@@ -1,13 +1,25 @@
+# IMPORT TKINTER LIBRARY
 from tkinter import *
+
+#  IMPORT MATH MODULE
 import math
+
+# CREATING WINDOW
 root=Tk()
+
+# ASSINING THE TITLE AND ICON
 root.iconbitmap("calc.ico")
 root.title("calculator")
+
+# BACKGROUND COLOUR
 root.configure(bg="black")
 
+#  ENTRY WIDGET
 e=Entry(root,width=60,borderwidth=10, relief=GROOVE,)
 e.grid( row=0,column=0,columnspan=4,padx=10,pady=10, ipady=10,)
 
+
+# DEFINING FUNCTIONS
 def button_click(number):
     current=e.get()
     e.delete(0,END)
@@ -62,6 +74,7 @@ def button_equal():
     elif math=="divide":
         e.insert(0,f_num / int(second_number))
 
+#  BUTTON WIDGET
 button_1=Button(root,text="1",padx=40,pady=20,font='Helvetica 18 bold',command=lambda : button_click(1))
 button_2=Button(root,text="2",padx=40,pady=20,font='Helvetica 18 bold',command=lambda : button_click(2))
 button_3=Button(root,text="3",padx=41,pady=20,font='Helvetica 18 bold',command=lambda : button_click(3))
@@ -95,4 +108,5 @@ button_sub.grid(row=3,column=3)
 button_mun.grid(row=4,column=2)
 button_div.grid(row=4,column=1)
 button_equal.grid(row=4,column=3,)
+
 root.mainloop()
