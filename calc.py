@@ -1,5 +1,5 @@
-import math
 from tkinter import *
+import math
 root=Tk()
 root.iconbitmap("calc.ico")
 root.title("calculator")
@@ -72,7 +72,6 @@ button_7=Button(root,text="7",padx=40,pady=20,font='Helvetica 18 bold',command=l
 button_8=Button(root,text="8",padx=40,pady=20,font='Helvetica 18 bold',command=lambda : button_click(8))
 button_9=Button(root,text="9",padx=41,pady=20,font='Helvetica 18 bold',command=lambda : button_click(9))
 button_0=Button(root,text="0",padx=40,pady=20,font='Helvetica 18 bold',command=lambda : button_click(0))
-
 button_add=Button(root,text="+",padx=44.5,pady=20,command=button_add, fg="green",font='Helvetica 18 bold')
 button_sub=Button(root,text="-",padx=48.49,pady=20,command=button_sub,fg="green",font='Helvetica 18 bold')
 button_mun=Button(root,text="*",padx=43,pady=20,command=button_mun,fg="green",font='Helvetica 18 bold')
@@ -83,22 +82,17 @@ button_clear=Button(root,text="Clear",padx=22.49,pady=20,command=button_clear, f
 button_1.grid(row=3,column=0)
 button_2.grid(row=3,column=1)
 button_3.grid(row=3,column=2)
-
 button_4.grid(row=2,column=0)
 button_5.grid(row=2,column=1)
 button_6.grid(row=2,column=2)
-
 button_7.grid(row=1,column=0)
 button_8.grid(row=1,column=1)
 button_9.grid(row=1,column=2)
 button_0.grid(row=4,column=0)
-
 button_clear.grid(row=1,column=3)
 button_add.grid(row=2,column=3)
 button_sub.grid(row=3,column=3)
 button_mun.grid(row=4,column=2)
 button_div.grid(row=4,column=1)
 button_equal.grid(row=4,column=3,)
-
-
 root.mainloop()
